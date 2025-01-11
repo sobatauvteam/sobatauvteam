@@ -67,25 +67,34 @@ nav a:hover {
     color: #d39f3b;
 }
 
-/* Hero banner (Anasayfa kısmı) */
 .hero {
     height: 100vh;
-    background: url('images/kodlama.jpg') no-repeat center center/cover;
     position: relative;
 }
 
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Görselin tam sığmasını sağlar */
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;  /* Görseli soluk hale getirir */
+}
+
 .overlay {
-    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content {
     text-align: center;
     color: white;
+    z-index: 3;
 }
 
 .hero-content h1 {
