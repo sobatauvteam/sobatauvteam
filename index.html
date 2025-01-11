@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobat AUV Takımı</title>
+    <style>
+        /* style.css içerikleri */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #ebebeb;
+        }
+        nav {
+            background-color: #1c2e3c;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #d39f3b;
+            text-decoration: underline;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d39f3b;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            color: #1c2e3c;
+        }
+        h2 {
+            font-size: 28px;
+            color: #570c10;
+        }
+        p {
+            font-size: 18px;
+            color: #030202;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #d39f3b;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #570c10;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1c2e3c;
+            color: white;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .card {
+            background-color: #f4f4f9;
+            padding: 20px;
+            border: 1px solid #d39f3b;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .sponsor-list .card h3 {
+            color: #1c2e3c;
+        }
+        .sponsor-list .card p {
+            color: #7b96a6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Anasayfa</a>
+        <a href="#ekibimiz">Ekibimiz</a>
+        <a href="#sponsorlarimiz">Sponsorlarımız</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <!-- Anasayfa Bölümü -->
+    <div id="home" class="container">
+        <h1>Anasayfa</h1>
+        <p>Gelecek derinlerde! Sobat AUV takımına hoş geldiniz.</p>
+        <a href="#ekibimiz" class="btn">Ekibimizi Keşfet</a>
+    </div>
+
+    <!-- Ekibimiz Bölümü -->
+    <div id="ekibimiz" class="container">
+        <h1>Ekibimiz</h1>
+        <p>Lophiiformes AUV takım üyeleri burada yer alacak.</p>
+    </div>
+
+    <!-- Sponsorlarımız Bölümü -->
+    <div id="sponsorlarimiz" class="container">
+        <h1>Sponsorlarımız</h1>
+        <p>Bu yolculuğumuzda bize destek veren sponsorlarımıza teşekkür ederiz!</p>
+        <div class="sponsor-list">
+            <div class="card">
+                <h3>Altın Sponsor</h3>
+                <p>Şirket A</p>
+            </div>
+            <div class="card">
+                <h3>Gümüş Sponsor</h3>
+                <p>Şirket B</p>
+            </div>
+            <div class="card">
+                <h3>Bronz Sponsor</h3>
+                <p>Şirket C</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- İletişim Bölümü -->
+    <div id="iletisim" class="container">
+        <h1>Bizimle İletişime Geçin</h1>
+        <p>Sorularınız için lütfen aşağıdaki formu doldurun veya doğrudan bize e-posta gönderin.</p>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Ad Soyad</label>
+                <input type="text" id="name" name="name" required placeholder="Adınızı girin">
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" required placeholder="E-posta adresinizi girin">
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Mesajınızı yazın"></textarea>
+            </div>
+            <button type="submit" class="btn">Gönder</button>
+        </form>
+        <p>E-posta: <a href="mailto:info@lophiiformes.com">info@lophiiformes.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sobat AUV Team</p>
+    </footer>
+</body>
+</html>
