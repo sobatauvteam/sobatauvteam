@@ -1,0 +1,107 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ebebeb;
+}
+
+nav {
+    background-color: #1c2e3c;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d39f3b;
+    text-decoration: underline;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: #1c2e3c;
+}
+
+h2 {
+    font-size: 28px;
+    color: #570c10;
+}
+
+p {
+    font-size: 18px;
+    color: #030202;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d39f3b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #570c10;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1c2e3c;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.card {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border: 1px solid #d39f3b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #d39f3b;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.sponsor-list .card h3 {
+    color: #1c2e3c;
+}
+
+.sponsor-list .card p {
+    color: #7b96a6;
+}
