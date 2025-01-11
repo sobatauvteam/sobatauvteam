@@ -89,15 +89,15 @@ footer {
 /* Ekibimiz kısmı için düzenleme */
 .team-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;  /* Satır taşmaları için wrap */
-    gap: 20px;        /* Kartlar arasında boşluk */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .team-member {
     text-align: center;
-    width: 30%;       /* Kart genişliği */
-    max-width: 300px; /* Maksimum genişlik */
+    width: 30%;
+    max-width: 300px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -124,4 +124,3 @@ footer {
         width: 100%;  /* Küçük ekranlarda tam genişlik */
     }
 }
-
