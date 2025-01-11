@@ -70,7 +70,7 @@ nav a:hover {
 /* Hero banner (Anasayfa kısmı) */
 .hero {
     height: 100vh;
-    background: url('images/kodlama.jpeg') no-repeat center center/cover;
+    background: url('images/kodlama.jpg') no-repeat center center/cover;
     position: relative;
 }
 
