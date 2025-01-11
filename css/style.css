@@ -86,16 +86,28 @@ footer {
     margin-bottom: 20px;
 }
 
-.profile-img {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid #d39f3b;
-    margin-bottom: 10px;
+/* Ekibimiz kısmı için düzenleme */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Satır taşmaları için wrap */
+    gap: 20px;        /* Kartlar arasında boşluk */
 }
 
 .team-member {
     text-align: center;
-    margin: 20px;
+    width: 30%;       /* Kart genişliği */
+    max-width: 300px; /* Maksimum genişlik */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #d39f3b;
+    margin-bottom: 10px;
 }
 
 .sponsor-list .card h3 {
@@ -105,3 +117,11 @@ footer {
 .sponsor-list .card p {
     color: #7b96a6;
 }
+
+/* Responsive düzen */
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;  /* Küçük ekranlarda tam genişlik */
+    }
+}
+
