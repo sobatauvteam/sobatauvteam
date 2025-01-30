@@ -14,55 +14,52 @@
 </head>
 
 <body class="body">
-  <!-- Üst Bilgi -->
-  <div class="top-bar" data-aos="fade-down">
-    <div class="top-bar-content">
-      <span>📍 Gazi Üniversitesi, Ankara, Türkiye</span>
-      <span>✉️ <a href="mailto:sobat.teknofest@gazi.edu.tr">sobat.teknofest@gazi.edu.tr</a></span>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/company/sobatauvteam/" target="_blank">🔗 LinkedIn</a>
-      <a href="https://instagram.com/sobatauvteam" target="_blank">📸 Instagram</a>
-    </div>
-  </div>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2" data-aos="fade-down" data-aos-delay="100">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-aos="fade-down" data-aos-delay="100">
   <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="#home">
-      <img src="images/logo.png" alt="Sobat AUV Logo" class="me-2">
+    <!-- Wrapper for logo and toggler (Only in mobile mode) -->
+    <div class="d-lg-none d-flex align-items-center w-100">
+      <a class="navbar-brand" href="#home">
+        <img src="images/logo.png" alt="Sobat AUV Logo" class="logo">
+      </a>
 
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
+      <!-- Mobile Navbar Toggler -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      
+      <a class="d-none d-lg-block navbar-brand me-5" href="#home">
+        <img src="images/logo.png" alt="Sobat AUV Logo" class="logo">
+      </a>
+      <ul class="navbar-nav ms-5">
+        <li class="nav-item px-2">
           <a class="nav-link text-white fw-bold" href="#home">Anasayfa</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item px-2">
           <a class="nav-link text-white fw-bold" href="#ekibimiz">Ekibimiz</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item px-2">
           <a class="nav-link text-white fw-bold" href="#sponsorlarimiz">Sponsorlarımız</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item px-2">
           <a class="nav-link text-white fw-bold" href="#iletisim">İletişim</a>
         </li>
       </ul>
-      <span class="navbar-text text-white fw-bold">
-        Gazi Üniversitesi, Ankara
-      </span>
     </div>
   </div>
 </nav>
 
 
 
+
   <!-- Anasayfa Bölümü -->
   <header class="hero">
-    <div class="overlay">
+    <div class="overlay" id="home">
       <!-- Arka plan olarak eklenen görsel -->
       <img src="images/teknofest.jpg" alt="Kodlama Görseli" class="hero-image">
       <div class="hero-content" data-aos="zoom-in">
@@ -74,37 +71,37 @@
   </header>
   <div class="info-section">
     <div class="info-text">
-        <h2>SOBAT AUV Nedir?</h2>
-        <p>
-            SOBAT AUV, Gazi Üniversitesi öğrencileri tarafından kurulan ve 
-            insansız su altı araçları (AUV) geliştirmeye odaklanan bir mühendislik ekibidir.
-            Takımımız, elektrik-elektronik, bilgisayar ve makine mühendisliği öğrencilerinin 
-            bir araya gelerek oluşturduğu multidisipliner bir yapıdadır.
-        </p>
-        <p>
-            2022 Teknofest İleri Kategori İnsansız Su Altı Aracı Yarışması'nda finalist olan 
-            ekibimiz, uluslararası yarışmalarda Türkiye'yi temsil etmeyi hedeflemektedir.
-        </p>
-        <a href="#iletisim" class="btn">Bize Katıl!</a>
+      <h2>SOBAT AUV Nedir?</h2>
+      <p>
+        SOBAT AUV, Gazi Üniversitesi öğrencileri tarafından kurulan ve
+        insansız su altı araçları (AUV) geliştirmeye odaklanan bir mühendislik ekibidir.
+        Takımımız, elektrik-elektronik, bilgisayar ve makine mühendisliği öğrencilerinin
+        bir araya gelerek oluşturduğu multidisipliner bir yapıdadır.
+      </p>
+      <p>
+        2022 Teknofest İleri Kategori İnsansız Su Altı Aracı Yarışması'nda finalist olan
+        ekibimiz, uluslararası yarışmalarda Türkiye'yi temsil etmeyi hedeflemektedir.
+      </p>
+      <a href="#iletisim" class="btn">Bize Katıl!</a>
     </div>
     <div class="info-highlight">
-        <h2>İnsansız Su Altı Teknolojisi</h2>
-        <p>
-            Sualtı keşif sistemleri, otonom hareket yeteneği ve derin öğrenme destekli görüntü işleme algoritmaları ile
-            en zorlu ortamlarda operasyon yapabilmektedir.
-        </p>
-        <a href="#teknoloji" class="btn btn-dark">Daha Fazla Bilgi</a>
+      <h2>İnsansız Su Altı Teknolojisi</h2>
+      <p>
+        Sualtı keşif sistemleri, otonom hareket yeteneği ve derin öğrenme destekli görüntü işleme algoritmaları ile
+        en zorlu ortamlarda operasyon yapabilmektedir.
+      </p>
+      <a href="#teknoloji" class="btn btn-dark">Daha Fazla Bilgi</a>
     </div>
-</div>
+  </div>
   <!-- Ekibimiz Bölümü -->
   <div id="ekibimiz" class="container">
     <h1 data-aos="fade-up">Ekibimiz</h1>
     <p data-aos="fade-up" data-aos-delay="200">
       Sobat AUV takım üyeleri aşağıda alt dallara ayrılmıştır:
     </p>
-    
+
     <h2 data-aos="fade-up">Yazılım Ekibi</h2>
-        <div class="team-container">
+    <div class="team-container">
       <div class="team-member" data-aos="zoom-in">
         <img src="images/nezahatkorkmaz.jpg" alt="Nezahat Korkmaz" class="profile-img">
         <p>Nezahat Korkmaz - Yazılım Şefi</p>
@@ -124,7 +121,7 @@
     </div>
 
     <h2 data-aos="fade-up">Elektrik-Elektronik Ekibi</h2>
-        <div class="team-container">
+    <div class="team-container">
       <div class="team-member" data-aos="zoom-in">
         <img src="images/fatihozdemir.jpeg" alt="Fatih Özdemir" class="profile-img">
         <p>Fatih Özdemir - Elektrik-Elektronik Şefi</p>
@@ -140,7 +137,7 @@
     </div>
 
     <h2 data-aos="fade-up">Mekanik Ekibi</h2>
-        <div class="team-container">
+    <div class="team-container">
       <div class="team-member" data-aos="zoom-in">
         <img src="images/farukduman.jpeg" alt="Faruk Duman" class="profile-img">
         <p>Faruk Duman - Mekanik Şefi</p>
@@ -154,14 +151,14 @@
         <p>Yakup Aydın - Mekanik Ekip Üyesi</p>
       </div>
     </div>
-        <h2 data-aos="fade-up">Sponsorluk ve Organizasyon Ekibi</h2>
-        <div class="team-container">
-            <div class="team-member">
-                <img src="images/kubrabebek.jpg" alt="Kübra Bebek" class="profile-img">
-                <p>Kübra Bebek - Sponsorluk & Organizasyon Sorumlusu</p>
-            </div>
-        </div>
-    </div>    
+    <h2 data-aos="fade-up">Sponsorluk ve Organizasyon Ekibi</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="images/kubrabebek.jpg" alt="Kübra Bebek" class="profile-img">
+        <p>Kübra Bebek - Sponsorluk & Organizasyon Sorumlusu</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Sponsorlarımız Bölümü -->
   <div id="sponsorlarimiz" class="container">

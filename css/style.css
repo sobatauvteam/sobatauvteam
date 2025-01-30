@@ -408,6 +408,9 @@ body {
         min-width: unset;
         margin-top: 30px;
     }
+    nav {
+        padding-block-start: 48px;
+    }
 }
 
 .navbar-brand img {
