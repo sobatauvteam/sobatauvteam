@@ -118,6 +118,11 @@ h2 {
     color: #570c10;
     text-align: center;
     margin-bottom: 20px;
+    text-align: center !important;
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    font-weight: bold;
 }
 
 p {
