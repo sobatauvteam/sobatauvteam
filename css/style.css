@@ -1,8 +1,9 @@
 /* Genel Stil Ayarları */
-body {
+.body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0px 0 0;
+    padding-top: 0px;
     line-height: 1.6;
     background-color: #ebebeb;
 }
@@ -11,7 +12,6 @@ body {
 .top-bar {
     background-color: #1c2e3c;
     color: white;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +58,7 @@ body {
 nav a {
     color: white;
     margin: 0 15px;
+    margin-top: 0; /* Remove extra margin */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
