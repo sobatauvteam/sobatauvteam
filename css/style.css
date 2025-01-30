@@ -2,8 +2,7 @@
 .body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
-    padding: 0px 0 0;
-    padding-top: 0px;
+    padding: 0;
     line-height: 1.6;
     background-color: #ebebeb;
 }
@@ -15,10 +14,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
 .top-bar-content span {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .top-bar a {
@@ -32,7 +32,7 @@
 }
 
 .social-icons a {
-    margin-right: 15px;
+    margin-right: 10px;
     color: white;
     font-size: 18px;
 }
@@ -44,7 +44,7 @@
 /* Navbar */
 nav {
     background-color: #1c2e3c;
-    padding: 15px;
+    padding: 10px 5px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -52,13 +52,12 @@ nav {
 }
 
 body {
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
-    margin-top: 0; /* Remove extra margin */
+    margin: 0 10px;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -68,6 +67,7 @@ nav a:hover {
     color: #d39f3b;
 }
 
+/* Hero Bölümü */
 .hero {
     height: 100vh;
     position: relative;
@@ -76,10 +76,10 @@ nav a:hover {
 .hero-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Görselin tam sığmasını sağlar */
+    object-fit: cover;
     position: absolute;
     z-index: 1;
-    opacity: 0.4;  /* Görseli soluk hale getirir */
+    opacity: 0.4;
 }
 
 .overlay {
@@ -98,34 +98,19 @@ nav a:hover {
     z-index: 3;
 }
 
-.hero-content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
 .container {
-    padding: 40px 20px;
+    padding: 10px;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 36px;
+h1, h2 {
+    text-align: left;
+    margin-left: 10px;
     color: #1c2e3c;
-    text-align: center;
-}
-
-h2 {
-    font-size: 28px;
-    color: #570c10;
 }
 
 p {
@@ -135,14 +120,12 @@ p {
 }
 
 .btn {
-    display: inline-block;
     background-color: #d39f3b;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 18px;
-    margin-top: 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -150,40 +133,23 @@ p {
     background-color: #570c10;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1c2e3c;
-    color: white;
-    margin-top: 40px;
-}
-
-.footer-contact a {
-    color: #d39f3b;
-    font-weight: bold;
-}
-
-.footer-contact a:hover {
-    text-decoration: underline;
-}
-
 /* Ekibimiz Bölümü */
 .team-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px 0;
 }
 
 .team-member {
+    flex: 1 1 250px;
     text-align: center;
-    width: 30%;
     max-width: 300px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-img {
@@ -197,10 +163,9 @@ footer {
 /* Sponsorlarımız Bölümü */
 .sponsor-list .card {
     background-color: #f4f4f9;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #d39f3b;
     border-radius: 8px;
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -218,7 +183,7 @@ footer {
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .form-group label {
@@ -230,7 +195,7 @@ footer {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
