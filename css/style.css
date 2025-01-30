@@ -223,97 +223,6 @@ button[type="submit"]:hover {
     background-color: #570c10;
 }
 
-/* Responsive Tasarım */
-@media (max-width: 768px) {
-    .team-member {
-        width: 100%;
-    }
-}
-.info-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 10%;
-    background: linear-gradient(to right, #003366, #006699); /* Daha modern bir mavi geçişi */
-    border-radius: 10px;
-    color: white;
-    margin: 50px auto;
-    max-width: 1400px;
-    min-height: 300px; /* Yüksekliği artırarak daha büyük görünmesini sağlıyoruz */
-}
-
-.info-text, .info-highlight {
-    flex: 1;
-    text-align: left;
-    padding: 30px;
-}
-
-.info-text h2, .info-highlight h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.info-text p, .info-highlight p {
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.info-highlight {
-    background: white;
-    color: black;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    min-width: 400px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #d39f3b;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-    font-size: 18px;
-}
-
-.btn:hover {
-    background-color: #570c10;
-}
-
-.btn-dark {
-    background-color: black;
-    color: white;
-    font-size: 18px;
-    padding: 12px 25px;
-}
-
-.btn-dark:hover {
-    background-color: gray;
-}
-
-/* Responsive tasarım için */
-@media (max-width: 1024px) {
-    .info-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 50px;
-    }
-
-    .info-text, .info-highlight {
-        width: 100%;
-        text-align: center;
-    }
-
-    .info-highlight {
-        min-width: unset;
-        margin-top: 20px;
-    }
-}
 /* Genel Stil */
 body {
     font-family: 'Roboto', Arial, sans-serif;
@@ -338,12 +247,20 @@ body {
 }
 
 .software-team {
-    background: url('../images/software-bg.jpg') center/cover no-repeat;
+    background: url('../images/yazilim.jpg') center/cover no-repeat;
     min-height: 350px;
 }
 
 .electronics-team {
-    background: url('../images/electronics-bg.jpg') center/cover no-repeat;
+    background: url('../images/elektronik.jpg') center/cover no-repeat;
+    min-height: 350px;
+}
+.mechanics-team {
+    background: url('../images/mekanik.jpeg') center/cover no-repeat;
+    min-height: 350px;
+}
+.social-team {
+    background: url('../images/market.jpeg') center/cover no-repeat;
     min-height: 350px;
 }
 
@@ -402,6 +319,7 @@ body {
 
 .info-text, .info-highlight {
     flex: 1;
+    color: #ccc;
     text-align: left;
     padding: 50px;
 }
