@@ -229,3 +229,68 @@ button[type="submit"]:hover {
         width: 100%;
     }
 }
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(to right, #3A6073, #FFD700);
+    border-radius: 10px;
+    color: white;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.info-text {
+    width: 50%;
+    text-align: left;
+}
+
+.info-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.info-highlight {
+    width: 40%;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-highlight h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d39f3b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #570c10;
+}
+
+.btn-dark {
+    background-color: black;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: gray;
+}
