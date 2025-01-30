@@ -314,3 +314,161 @@ button[type="submit"]:hover {
         margin-top: 20px;
     }
 }
+/* Genel Stil */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    background-color: #ebebeb;
+}
+
+/* Takım Bölümleri */
+.team-section {
+    padding: 80px 0;
+    margin-bottom: 60px;
+}
+
+.team-header {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.software-team {
+    background: url('../images/software-bg.jpg') center/cover no-repeat;
+    min-height: 350px;
+}
+
+.electronics-team {
+    background: url('../images/electronics-bg.jpg') center/cover no-repeat;
+    min-height: 350px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.team-member {
+    flex: 1 1 320px;
+    text-align: center;
+    max-width: 350px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #d39f3b;
+    margin-bottom: 15px;
+}
+
+.linkedin-icon {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 26px;
+    text-decoration: none;
+    color: #0077b5;
+}
+
+.linkedin-icon:hover {
+    color: #004a7c;
+}
+
+/* Giriş Bölümü */
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 8%;
+    background: linear-gradient(to right, #002147, #004488);
+    border-radius: 12px;
+    color: white;
+    margin: 70px auto;
+    max-width: 1300px;
+    min-height: 400px;
+}
+
+.info-text, .info-highlight {
+    flex: 1;
+    text-align: left;
+    padding: 50px;
+}
+
+.info-text h2, .info-highlight h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.info-text p, .info-highlight p {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.info-highlight {
+    background: white;
+    color: black;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    min-width: 450px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d39f3b;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    font-size: 22px;
+}
+
+.btn:hover {
+    background-color: #570c10;
+}
+
+.btn-dark {
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    padding: 16px 32px;
+}
+
+.btn-dark:hover {
+    background-color: gray;
+}
+
+/* Responsive tasarım için */
+@media (max-width: 1024px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px;
+    }
+
+    .info-text, .info-highlight {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-highlight {
+        min-width: unset;
+        margin-top: 30px;
+    }
+}
