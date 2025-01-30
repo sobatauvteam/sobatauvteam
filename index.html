@@ -1,244 +1,156 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobat AUV Takımı</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Your Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobat AUV Takımı</title>
+    <!-- CSS Dosyasını Yükle -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body class="body">
-  <!-- Üst Bilgi -->
-  <div class="top-bar" data-aos="fade-down">
-    <div class="top-bar-content">
-      <span>📍 Gazi Üniversitesi, Ankara, Türkiye</span>
-      <span>✉️ <a href="mailto:sobat.teknofest@gazi.edu.tr">sobat.teknofest@gazi.edu.tr</a></span>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/company/sobatauvteam/" target="_blank">🔗 LinkedIn</a>
-      <a href="https://instagram.com/sobatauvteam" target="_blank">📸 Instagram</a>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down" data-aos-delay="100">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold text-white" href="#home">Sobat AUV</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="#home">Anasayfa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="#ekibimiz">Ekibimiz</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="#sponsorlarimiz">Sponsorlarımız</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white fw-bold" href="#iletisim">İletişim</a>
-          </li>
-        </ul>
-        <span class="navbar-text text-white fw-bold">
-          Gazi Üniversitesi, Ankara
-        </span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Anasayfa Bölümü -->
-  <header class="hero">
-    <div class="overlay">
-      <!-- Arka plan olarak eklenen görsel -->
-      <img src="images/kodlama.jpg" alt="Kodlama Görseli" class="hero-image">
-      <div class="hero-content" data-aos="zoom-in">
-        <h1>Gazi Üniversitesi Sobat İnsansız Su Altı Sistemleri</h1>
-        <p>Gelecek derinlerde! Sobat AUV takımına hoş geldiniz.</p>
-        <a href="#ekibimiz" class="btn" data-aos="fade-up" data-aos-delay="200">Ekibimizi Keşfet</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Ekibimiz Bölümü -->
-  <div id="ekibimiz" class="container">
-    <h1 data-aos="fade-up">Ekibimiz</h1>
-    <p data-aos="fade-up" data-aos-delay="200">
-      Sobat AUV takım üyeleri aşağıda alt dallara ayrılmıştır:
-    </p>
-
-    <h2 data-aos="fade-right">Yazılım Ekibi</h2>
-    <div class="team-container">
-      <div class="team-member" data-aos="zoom-in">
-        <img src="images/nezahatkorkmaz.jpg" alt="Nezahat Korkmaz" class="profile-img">
-        <p>Nezahat Korkmaz - Yazılım Şefi</p>
-      </div>
-      <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
-        <img src="images/aliosmanseyis.jpg" alt="Ali Osman Seyis" class="profile-img">
-        <p>Ali Osman Seyis - Yazılım Ekip Üyesi</p>
-      </div>
-      <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
-        <img src="images/hagarhamad.jpg" alt="Hagar Hamad" class="profile-img">
-        <p>Hagar Hamad - Yazılım Ekip Üyesi</p>
-      </div>
-    </div>
-
-    <h2 data-aos="fade-left">Elektrik-Elektronik Ekibi</h2>
-    <div class="team-container">
-      <div class="team-member" data-aos="zoom-in">
-        <img src="images/fatihozdemir.jpeg" alt="Fatih Özdemir" class="profile-img">
-        <p>Fatih Özdemir - Elektrik-Elektronik Şefi</p>
-      </div>
-      <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
-        <img src="images/enisefeyza.jpg" alt="Enise Feyza Kuzoluk" class="profile-img">
-        <p>Enise Feyza Kuzoluk - Elektrik-Elektronik Ekip Üyesi</p>
-      </div>
-      <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
-        <img src="images/emreemek.jpg" alt="Emre Emek" class="profile-img">
-        <p>Emre Emek - Elektrik-Elektronik Ekip Üyesi</p>
-      </div>
-    </div>
-
-    <h2 data-aos="fade-right">Mekanik Ekibi</h2>
-    <div class="team-container">
-      <div class="team-member" data-aos="zoom-in">
-        <img src="images/farukduman.jpeg" alt="Faruk Duman" class="profile-img">
-        <p>Faruk Duman - Mekanik Şefi</p>
-      </div>
-      <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
-        <img src="images/aysecelik.jpg" alt="Ayşe Çelik" class="profile-img">
-        <p>Ayşe Çelik - Mekanik Ekip Üyesi</p>
-      </div>
-      <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
-        <img src="images/omerkaraman.jpg" alt="Ömer Karaman" class="profile-img">
-        <p>Ömer Karaman - Mekanik Ekip Üyesi</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Sponsorlarımız Bölümü -->
-  <div id="sponsorlarimiz" class="container">
-    <h1 data-aos="fade-up">Sponsorlarımız</h1>
-    <p data-aos="fade-up" data-aos-delay="200">
-      Bu yolculuğumuzda bize destek veren sponsorlarımıza teşekkür ederiz!
-    </p>
-    <div class="sponsor-list">
-      <div class="card" data-aos="flip-left">
-        <h3>Altın Sponsor</h3>
-        <p>Şirket A</p>
-      </div>
-      <div class="card" data-aos="flip-left" data-aos-delay="100">
-        <h3>Gümüş Sponsor</h3>
-        <p>Şirket B</p>
-      </div>
-      <div class="card" data-aos="flip-left" data-aos-delay="200">
-        <h3>Bronz Sponsor</h3>
-        <p>Şirket C</p>
-      </div>
-    </div>
-  </div>
-
-<!-- İletişim Bölümü -->
-<div id="iletisim" class="container mt-5">
-    <h1 data-aos="fade-up">Bizimle İletişime Geçin</h1>
-    <p data-aos="fade-up" data-aos-delay="200">
-      Sorularınız için lütfen aşağıdaki formu doldurun veya doğrudan bize e-posta gönderin.
-    </p>
-  
-    <form 
-      action="#" 
-      method="POST" 
-      class="row g-3 needs-validation" 
-      novalidate 
-      data-aos="fade-up"
-      data-aos-delay="300"
-    >
-      <!-- Ad Soyad -->
-      <div class="col-md-6 form-group">
-        <label for="name" class="form-label">Ad Soyad</label>
-        <input 
-          type="text" 
-          class="form-control" 
-          id="name" 
-          name="name" 
-          required
-        >
-        <div class="invalid-feedback">
-          Lütfen adınızı girin.
+<body>
+    <!-- Üst Bilgi -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>📍 Gazi Üniversitesi, Ankara, Türkiye</span>
+            <span>✉️ <a href="mailto:sobat.teknofest@gazi.edu.tr">sobat.teknofest@gazi.edu.tr</a></span>
         </div>
-      </div>
-  
-      <!-- E-posta -->
-      <div class="col-md-6 form-group">
-        <label for="email" class="form-label">E-posta</label>
-        <input 
-          type="email" 
-          class="form-control" 
-          id="email" 
-          name="email" 
-          required
-        >
-        <div class="invalid-feedback">
-          Lütfen geçerli bir e-posta adresi girin.
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/sobatauvteam/" target="_blank">🔗 LinkedIn</a>
+            <a href="https://instagram.com/sobatauvteam" target="_blank">📸 Instagram</a>
         </div>
-      </div>
-  
-      <!-- Mesajınız -->
-      <div class="col-12 form-group">
-        <label for="message" class="form-label">Mesajınız</label>
-        <textarea 
-          class="form-control" 
-          id="message" 
-          name="message" 
-          rows="5" 
-          required
-        ></textarea>
-        <div class="invalid-feedback">
-          Lütfen mesajınızı yazın.
-        </div>
-      </div>
-  
-      <!-- Gönder Button -->
-      <div class="col-12">
-        <button 
-          type="submit" 
-          class="btn btn-primary"
-        >
-          Gönder
-        </button>
-      </div>
-    </form>
-  </div>
-  
-  <footer class="text-center mt-5" data-aos="fade-up">
-    <p>&copy; 2025 Sobat AUV Team | Tüm Hakları Saklıdır.</p>
-    <p>Takipte Kalın:
-      <a href="https://www.linkedin.com/in/sobatauv/" target="_blank" class="btn btn-primary">LinkedIn</a>
-      <a href="https://instagram.com/sobatauv" target="_blank" class="btn btn-danger">Instagram</a>
-      <a href="https://twitter.com/sobatauv" target="_blank" class="btn btn-info">Twitter</a>
-    </p>
-  </footer>
+    </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init(); // Initialize AOS
-  </script>
+    <nav>
+        <a href="#home">Anasayfa</a>
+        <a href="#ekibimiz">Ekibimiz</a>
+        <a href="#sponsorlarimiz">Sponsorlarımız</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <!-- Anasayfa Bölümü -->
+    <header class="hero">
+        <div class="overlay">
+            <!-- Arka plan olarak eklenen görsel -->
+            <img src="images/kodlama.jpg" alt="Kodlama Görseli" class="hero-image">
+            <div class="hero-content">
+                <h1>Gazi Üniversitesi Sobat İnsansız Su Altı Sistemleri</h1>
+                <p>Gelecek derinlerde! Sobat AUV takımına hoş geldiniz.</p>
+                <a href="#ekibimiz" class="btn">Ekibimizi Keşfet</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ekibimiz Bölümü -->
+    <div id="ekibimiz" class="container">
+        <h1>Ekibimiz</h1>
+        <p>Sobat AUV takım üyeleri aşağıda alt dallara ayrılmıştır:</p>
+    
+        <h2>Yazılım Ekibi</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/nezahatkorkmaz.jpg" alt="Nezahat Korkmaz" class="profile-img">
+                <p>Nezahat Korkmaz - Yazılım Şefi</p>
+            </div>
+            <div class="team-member">
+                <img src="images/aliosmanseyis.jpg" alt="Ali Osman Seyis" class="profile-img">
+                <p>Ali Osman Seyis - Yazılım Ekip Üyesi</p>
+            </div>
+            <div class="team-member">
+                <img src="images/hagarhamad.jpg" alt="Hagar Hamad" class="profile-img">
+                <p>Hagar Hamad - Yazılım Ekip Üyesi</p>
+            </div>
+        </div>
+
+        <h2>Elektrik-Elektronik Ekibi</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/fatihozdemir.jpeg" alt="Fatih Özdemir" class="profile-img">
+                <p>Fatih Özdemir - Elektrik-Elektronik Şefi</p>
+            </div>
+            <div class="team-member">
+                <img src="images/enisefeyza.jpg" alt="Enise Feyza Kuzoluk" class="profile-img">
+                <p>Enise Feyza Kuzoluk - Elektrik-Elektronik Ekip Üyesi</p>
+            </div>
+            <div class="team-member">
+                <img src="images/emreemek.jpeg" alt="Emre Emek" class="profile-img">
+                <p>Emre Emek - Elektrik-Elektronik Ekip Üyesi</p>
+            </div>
+        </div>
+
+        <h2>Mekanik Ekibi</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/farukduman.jpeg" alt="Faruk Duman" class="profile-img">
+                <p>Faruk Duman - Mekanik Şefi</p>
+            </div>
+            <div class="team-member">
+                <img src="images/nurefsankaymak.jpeg" alt="Nurefşan Kaymak" class="profile-img">
+                <p>Ayşe Çelik - Mekanik Ekip Üyesi</p>
+            </div>
+            <div class="team-member">
+                <img src="images/yakup.jpg" alt="Yakup Aydın" class="profile-img">
+                <p>Ömer Karaman - Mekanik Ekip Üyesi</p>
+            </div>
+        </div>
+
+        <h2>Sponsorluk ve Organizasyon Ekibi</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/kubrabebek.jpg" alt="Kübra Bebek" class="profile-img">
+                <p>Kübra Bebek - Sponsorluk & Organizasyon Sorumlusu</p>
+            </div>
+        </div>
+    </div>    
+
+    <!-- Sponsorlarımız Bölümü -->
+    <div id="sponsorlarimiz" class="container">
+        <h1>Sponsorlarımız</h1>
+        <p>Bu yolculuğumuzda bize destek veren sponsorlarımıza teşekkür ederiz!</p>
+        <div class="sponsor-list">
+            <div class="card">
+                <h3>Altın Sponsor</h3>
+                <p>Şirket A</p>
+            </div>
+            <div class="card">
+                <h3>Gümüş Sponsor</h3>
+                <p>Şirket B</p>
+            </div>
+            <div class="card">
+                <h3>Bronz Sponsor</h3>
+                <p>Şirket C</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- İletişim Bölümü -->
+    <div id="iletisim" class="container">
+        <h1>Bizimle İletişime Geçin</h1>
+        <p>Sorularınız için lütfen aşağıdaki formu doldurun veya doğrudan bize e-posta gönderin.</p>
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Ad Soyad</label>
+                <input type="text" id="name" name="name" required placeholder="Adınızı girin">
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" required placeholder="E-posta adresinizi girin">
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Mesajınızı yazın"></textarea>
+            </div>
+            <button type="submit" class="btn">Gönder</button>
+        </form>
+        <p class="footer-contact">✉️ E-posta: <a href="mailto:sobat.teknofest@gazi.edu.tr">sobat.teknofest@gazi.edu.tr</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sobat AUV Team | Tüm Hakları Saklıdır.</p>
+        <p>Takipte Kalın: 
+            <a href="https://www.linkedin.com/in/sobatauv/" target="_blank">LinkedIn</a> | 
+            <a href="https://instagram.com/sobatauv" target="_blank">Instagram</a> | 
+            <a href="https://twitter.com/sobatauv" target="_blank">Twitter</a>
+        </p>
+    </footer>
 </body>
 </html>
