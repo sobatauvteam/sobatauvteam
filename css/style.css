@@ -319,7 +319,7 @@ body {
 
 .info-text, .info-highlight {
     flex: 1;
-    color: #ccc;
+    color:#f4f4f9;
     text-align: left;
     padding: 50px;
 }
