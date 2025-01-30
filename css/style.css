@@ -98,6 +98,7 @@ nav a:hover {
     z-index: 3;
 }
 
+/* Ana İçerik */
 .container {
     padding: 10px;
     max-width: 1200px;
@@ -131,6 +132,7 @@ p {
     text-align: center;
 }
 
+/* Düğmeler */
 .btn {
     background-color: #d39f3b;
     color: white;
@@ -146,30 +148,60 @@ p {
 }
 
 /* Ekibimiz Bölümü */
+.team-section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.software-team {
+    background-image: url('../images/yazilim.jpg');
+}
+
+.electronics-team {
+    background-image: url('../images/elektronik.jpg');
+}
+
+.mechanics-team {
+    background-image: url('../images/mekanik.jpg');
+}
+
+.social-team {
+    background-image: url('../images/sponsorluk.jpg');
+}
+
+/* Takım Üyeleri */
 .team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    padding: 10px 0;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .team-member {
-    flex: 1 1 250px;
-    text-align: center;
-    max-width: 300px;
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
 }
 
 .profile-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #d39f3b;
     margin-bottom: 10px;
+    border: 4px solid #d39f3b;
 }
 
 /* Sponsorlarımız Bölümü */
@@ -223,86 +255,6 @@ button[type="submit"]:hover {
     background-color: #570c10;
 }
 
-/* Genel Stil */
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.8;
-    background-color: #ebebeb;
-}
-
-/* Takım Bölümleri */
-.team-section {
-    padding: 80px 0;
-    margin-bottom: 60px;
-}
-
-.team-header {
-    text-align: center;
-    padding: 80px 20px;
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.software-team {
-    background: url('../images/yazilim.jpg') center/cover no-repeat;
-    min-height: 350px;
-}
-
-.electronics-team {
-    background: url('../images/elektronik.jpg') center/cover no-repeat;
-    min-height: 350px;
-}
-.mechanics-team {
-    background: url('../images/mekanik.jpeg') center/cover no-repeat;
-    min-height: 350px;
-}
-.social-team {
-    background: url('../images/market.jpeg') center/cover no-repeat;
-    min-height: 350px;
-}
-
-.team-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 40px;
-}
-
-.team-member {
-    flex: 1 1 320px;
-    text-align: center;
-    max-width: 350px;
-    background-color: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    position: relative;
-}
-
-.profile-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid #d39f3b;
-    margin-bottom: 15px;
-}
-
-.linkedin-icon {
-    display: inline-block;
-    margin-top: 12px;
-    font-size: 26px;
-    text-decoration: none;
-    color: #0077b5;
-}
-
-.linkedin-icon:hover {
-    color: #004a7c;
-}
-
 /* Giriş Bölümü */
 .info-section {
     display: flex;
@@ -345,22 +297,7 @@ body {
     min-width: 450px;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #d39f3b;
-    color: white;
-    padding: 16px 32px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-    font-size: 22px;
-}
-
-.btn:hover {
-    background-color: #570c10;
-}
-
+/* Düğmeler */
 .btn-dark {
     background-color: black;
     color: white;
