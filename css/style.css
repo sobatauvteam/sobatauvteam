@@ -50,6 +50,12 @@
 .social-icons a:hover {
     color: #d39f3b;
 }
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+
+  }
+  
 
 /* Navbar */
 nav {
@@ -131,7 +137,7 @@ h1 {
 
 h2 {
     font-size: 28px;
-    color: #570c10;
+    color: white;
 }
 
 p {
@@ -338,7 +344,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 90px 8%;
-    background: linear-gradient(to right, #002147, #004488);
+    background:  #1c2e3c;
     border-radius: 12px;
     color: white;
     margin: 70px auto;
