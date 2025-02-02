@@ -8,14 +8,20 @@
     font-size: larger;
 }
 
-
-.body {
+body {
     font-family: "Rajdhani", serif;
     margin: 0;
-    padding: 0px 0 0;
-    padding-top: 0px;
+    padding: 0;
     line-height: 1.6;
-    background-color: whitesmoke;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        #ebebeb 80%
+    );
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
 }
 
 /* Üst Bilgi */
@@ -419,7 +425,8 @@ body {
     right: -50px;
     bottom: -50px;
     left: -50px;
-    background: radial-gradient(circle at right, rgba(0,119,182,0.15) 0%, transparent 60%);
+    background: linear-gradient(
+        to bottom,rgba(0,119,182,0.15) 0%, transparent 10%);
     pointer-events: none;
   }
   
