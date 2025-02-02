@@ -373,25 +373,34 @@ button[type="submit"]:hover {
     100% { box-shadow: 0 0 20px 10px rgba(13, 110, 253, 0); }
 
 }
-/* Responsive tasarım için */
-@media (max-width: 1024px) {
-    .info-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 70px;
-    }
 
-    .info-text, .info-highlight {
-        width: 100%;
-        text-align: center;
+/* Mobile-first approach */
+@media (max-width: 992px) {
+    .info-section .container {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
     }
-
+  
+    .info-section .container .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .info-section .container .col-lg-7,
+    .info-section .container .col-lg-5 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .info-text,
     .info-highlight {
-        min-width: unset;
-        margin-top: 30px;
+      border-radius: 0 !important; /* Remove rounded corners for full-width effect */
     }
+  }
 
-}
 
 .navbar-brand img {
   height: 50px; /* Adjust height as needed */
