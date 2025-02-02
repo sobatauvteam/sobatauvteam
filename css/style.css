@@ -338,47 +338,7 @@ body {
     color: #004a7c;
 }
 
-/* Giriş Bölümü */
-.info-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 90px 8%;
-    background:  #1c2e3c;
-    border-radius: 12px;
-    color: white;
-    margin: 70px auto;
-    max-width: 1300px;
-    min-height: 400px;
-}
 
-.info-text, .info-highlight {
-    flex: 1;
-    color:#f4f4f9;
-    text-align: left;
-    padding: 50px;
-}
-
-.info-text h2, .info-highlight h2 {
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.info-text p, .info-highlight p {
-    font-size: 22px;
-    line-height: 1.8;
-}
-
-.info-highlight {
-    background: white;
-    color: black;
-    padding: 40px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
-    min-width: 450px;
-}
 
 .btn {
     display: inline-block;
@@ -444,4 +404,100 @@ body {
     width: 100%;
     height: auto;
     z-index: 1;
+  }
+
+
+  .info-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-gradient-around::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
+    background: radial-gradient(circle at right, rgba(0,119,182,0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  
+  .info-highlight {
+    transition: transform 0.3s ease;
+  }
+  
+  .info-highlight:hover {
+    transform: translateY(-5px);
+  }
+  
+  .btn {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #005cbf;
+  }
+  
+  .btn-dark:hover {
+    background-color: #1a1a1a;
+    border-color: #000;
+  }
+  
+  @media (max-width: 992px) {
+    .info-text, .info-highlight {
+      text-align: center;
+    }
+    
+    .btn {
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+
+  .hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+  }
+  
+  .tech-glow {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tech-glow::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(13,110,253,0.15) 0%, transparent 60%);
+    animation: pulse-glow 4s infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.8; transform: scale(1.1); }
+    100% { opacity: 0.4; }
+  }
+  
+  .icon-box {
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-box:hover {
+    transform: rotate(15deg) scale(1.1);
+  }
+  
+  .achievement-badge {
+    border: 2px solid #0d6efd;
+    background: rgba(13,110,253,0.15);
+    position: relative;
   }
