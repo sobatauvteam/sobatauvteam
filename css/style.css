@@ -418,7 +418,7 @@ button[type="submit"]:hover {
     overflow: hidden;
   }
   
-  .bg-gradient-around::after {
+  .bg-gradient-around::before {
     content: '';
     position: absolute;
     top: -50px;
@@ -426,8 +426,10 @@ button[type="submit"]:hover {
     bottom: -50px;
     left: -50px;
     background: linear-gradient(
-        to bottom,rgba(0,119,182,0.15) 0%, transparent 10%);
+        to bottom,#d6e1e7 5%, transparent 30%);
     pointer-events: none;
+    z-index: -1;
+
   }
   
   .info-highlight {
