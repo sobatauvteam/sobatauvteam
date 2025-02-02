@@ -264,46 +264,35 @@ button[type="submit"]:hover {
     background-color: #570c10;
 }
 
-/* Genel Stil */
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.8;
-    background-color: #ebebeb;
-}
+
 
 /* Takım Bölümleri */
 .team-section {
-    padding: 80px 0;
+    font-family: "Rajdhani", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    padding: 10px 0;
     margin-bottom: 60px;
 }
 
 .team-header {
-    text-align: center;
-    padding: 80px 20px;
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
+    font-family: "Rajdhani", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    padding: 1rem;
+    font-size: 2rem;
+    position: relative;
+    transition: transform 0.3s ease;
 }
 
-.software-team {
-    background: url('../images/yazilim.jpg') center/cover no-repeat;
-    min-height: 350px;
+.team-header:hover {
+    transform: translateX(10px);
 }
 
-.electronics-team {
-    background: url('../images/elektronik.jpg') center/cover no-repeat;
-    min-height: 350px;
-}
-.mechanics-team {
-    background: url('../images/mekanik.jpeg') center/cover no-repeat;
-    min-height: 350px;
-}
-.social-team {
-    background: url('../images/market.jpeg') center/cover no-repeat;
-    min-height: 350px;
-}
 
 .team-container {
     display: flex;
@@ -334,16 +323,23 @@ body {
 
 .linkedin-icon {
     display: inline-block;
-    margin-top: 12px;
-    font-size: 26px;
-    text-decoration: none;
     color: #0077b5;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
 .linkedin-icon:hover {
     color: #004a7c;
+    transform: scale(1.2);
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .team-header {
+        font-size: 1.5rem;
+        padding: 1rem;
+   
+    } }
 
 
 .btn {
@@ -354,7 +350,6 @@ body {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s ease;
     font-size: 22px;
 }
 
@@ -372,7 +367,12 @@ body {
 .btn-dark:hover {
     background-color: gray;
 }
+/* Section Header Animation */
+@keyframes teamHeaderGlow {
+    0% { box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.5); }
+    100% { box-shadow: 0 0 20px 10px rgba(13, 110, 253, 0); }
 
+}
 /* Responsive tasarım için */
 @media (max-width: 1024px) {
     .info-section {
