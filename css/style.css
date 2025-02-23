@@ -264,46 +264,35 @@ button[type="submit"]:hover {
     background-color: #570c10;
 }
 
-/* Genel Stil */
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.8;
-    background-color: #ebebeb;
-}
+
 
 /* Takım Bölümleri */
 .team-section {
-    padding: 80px 0;
+    font-family: "Rajdhani", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    padding: 10px 0;
     margin-bottom: 60px;
 }
 
 .team-header {
-    text-align: center;
-    padding: 80px 20px;
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
+    font-family: "Rajdhani", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    padding: 1rem;
+    font-size: 2rem;
+    position: relative;
+    transition: transform 0.3s ease;
 }
 
-.software-team {
-    background: url('../images/yazilim.jpg') center/cover no-repeat;
-    min-height: 350px;
+.team-header:hover {
+    transform: translateX(10px);
 }
 
-.electronics-team {
-    background: url('../images/elektronik.jpg') center/cover no-repeat;
-    min-height: 350px;
-}
-.mechanics-team {
-    background: url('../images/mekanik.jpeg') center/cover no-repeat;
-    min-height: 350px;
-}
-.social-team {
-    background: url('../images/market.jpeg') center/cover no-repeat;
-    min-height: 350px;
-}
 
 .team-container {
     display: flex;
@@ -334,16 +323,23 @@ body {
 
 .linkedin-icon {
     display: inline-block;
-    margin-top: 12px;
-    font-size: 26px;
-    text-decoration: none;
     color: #0077b5;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
 .linkedin-icon:hover {
     color: #004a7c;
+    transform: scale(1.2);
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .team-header {
+        font-size: 1.5rem;
+        padding: 1rem;
+   
+    } }
 
 
 .btn {
@@ -354,7 +350,6 @@ body {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s ease;
     font-size: 22px;
 }
 
@@ -372,26 +367,40 @@ body {
 .btn-dark:hover {
     background-color: gray;
 }
-
-/* Responsive tasarım için */
-@media (max-width: 1024px) {
-    .info-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 70px;
-    }
-
-    .info-text, .info-highlight {
-        width: 100%;
-        text-align: center;
-    }
-
-    .info-highlight {
-        min-width: unset;
-        margin-top: 30px;
-    }
+/* Section Header Animation */
+@keyframes teamHeaderGlow {
+    0% { box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.5); }
+    100% { box-shadow: 0 0 20px 10px rgba(13, 110, 253, 0); }
 
 }
+
+/* Mobile-first approach */
+@media (max-width: 992px) {
+    .info-section .container {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .info-section .container .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .info-section .container .col-lg-7,
+    .info-section .container .col-lg-5 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .info-text,
+    .info-highlight {
+      border-radius: 0 !important; /* Remove rounded corners for full-width effect */
+    }
+  }
+
 
 .navbar-brand img {
   height: 50px; /* Adjust height as needed */
@@ -418,7 +427,7 @@ body {
     overflow: hidden;
   }
   
-  .bg-gradient-around::after {
+  .bg-gradient-around::before {
     content: '';
     position: absolute;
     top: -50px;
@@ -426,8 +435,10 @@ body {
     bottom: -50px;
     left: -50px;
     background: linear-gradient(
-        to bottom,rgba(0,119,182,0.15) 0%, transparent 10%);
+        to bottom,#d6e1e7 5%, transparent 30%);
     pointer-events: none;
+    z-index: -1;
+
   }
   
   .info-highlight {
